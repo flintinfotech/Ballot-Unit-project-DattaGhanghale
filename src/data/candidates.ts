@@ -5,7 +5,7 @@ export const candidates: Candidate[] = [
     id: 1,
     name: "दत्तात्रय विठ्ठल घंगाळे",
     photo1: "/PrabhagNo26Images/DattaGh1.jpeg",
-    symbol: "/ShivsenaLogo.png",
+    symbol: "/ShivsenaSVG.png",
     votes: 0,
   },
   {
@@ -62,7 +62,7 @@ export const candidates: Candidate[] = [
     id: 1,
     name: "अश्विनी दत्तात्रय घंगाळे",
     photo1: "/PrabhagNo26Images/AshGh1.jpeg",
-    symbol: "/ShivsenaLogo.png",
+    symbol: "/ShivsenaSVG.png",
     votes: 0,
   },
   {
@@ -135,7 +135,7 @@ export const candidates: Candidate[] = [
     id: 4,
     name: "म्हात्रे सोनम राजेश",
     photo1: "/PrabhagNo26Images/SonamM1.jpg",
-    symbol: "/ShivsenaLogo.png",
+    symbol: "/ShivsenaSVG.png",
     votes: 0,
   },
   {
@@ -191,7 +191,7 @@ export const candidates: Candidate[] = [
     id: 4,
     name: "संदीप नरहरी साळुंके",
     photo1: "/PrabhagNo26Images/SandipS2.jpg",
-    symbol: "/ShivsenaLogo.png",
+    symbol: "/ShivsenaSVG.png",
     votes: 0,
   },
   {

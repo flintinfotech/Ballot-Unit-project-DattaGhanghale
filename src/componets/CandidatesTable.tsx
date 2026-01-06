@@ -88,7 +88,7 @@ const CandidatesTable: React.FC = () => {
                       style={{ background: activeKey === key ? "red" : "black" }}
                     />
                   </td>
-                  <td>
+                  <td style={{ backgroundColor: "#e0e0e0" }}>
                     <button className="vote-btn" onClick={() => handleVote(c, key)}>
                       <b>बटन दाबा 👆🏼</b>
                     </button>
@@ -121,7 +121,7 @@ const CandidatesTable: React.FC = () => {
                       style={{ background: activeKey === key ? "red" : "black" }}
                     />
                   </td>
-                  <td>
+                  <td style={{ backgroundColor: "#e0e0e0" }}>
                     <button className="vote-btn" onClick={() => handleVote(c, key)}>
                       <b>बटन दाबा 👆🏼</b>
                     </button>
@@ -154,7 +154,7 @@ const CandidatesTable: React.FC = () => {
                       style={{ background: activeKey === key ? "red" : "black" }}
                     />
                   </td>
-                  <td>
+                  <td style={{ backgroundColor: "#e0e0e0" }}>
                     <button className="vote-btn" onClick={() => handleVote(c, key)}>
                       <b>बटन दाबा 👆🏼</b>
                     </button>
@@ -187,7 +187,7 @@ const CandidatesTable: React.FC = () => {
                       style={{ background: activeKey === key ? "red" : "black" }}
                     />
                   </td>
-                  <td>
+                  <td style={{ backgroundColor: "#e0e0e0" }}>
                     <button className="vote-btn" onClick={() => handleVote(c, key)}>
                       <b>बटन दाबा 👆🏼</b>
                     </button>
