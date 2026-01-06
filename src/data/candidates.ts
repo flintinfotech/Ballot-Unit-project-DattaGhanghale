@@ -3,9 +3,9 @@ import type { Candidate } from "../types/candidate";
 export const candidates: Candidate[] = [
   {
     id: 1,
-    name: "दत्तात्रय विठ्ठल घंगाळे",
-    photo1: "/PrabhagNo26Images/DattaGh1.jpeg",
-    symbol: "/ShivsenaSVG.png",
+    name: "बबन नामदेव मुकादम",
+    photo1: "/PrabhagNo08Images/baban.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -60,8 +60,8 @@ export const candidates: Candidate[] = [
 
   {
     id: 1,
-    name: "अश्विनी दत्तात्रय घंगाळे",
-    photo1: "/PrabhagNo26Images/AshGh1.jpeg",
+    name: "सायली तुकाराम सरक",
+    photo1: "/PrabhagNo08Images/sayali.jpg",
     symbol: "/ShivsenaSVG.png",
     votes: 0,
   },
@@ -133,9 +133,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "म्हात्रे सोनम राजेश",
-    photo1: "/PrabhagNo26Images/SonamM1.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "बायजा बबन बारगजे",
+    photo1: "/PrabhagNo08Images/sayja.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -189,8 +189,8 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "संदीप नरहरी साळुंके",
-    photo1: "/PrabhagNo26Images/SandipS2.jpg",
+    name: "रामदास वामनराव शेवाळे",
+    photo1: "/PrabhagNo08Images/ramdas.jpg",
     symbol: "/ShivsenaSVG.png",
     votes: 0,
   },

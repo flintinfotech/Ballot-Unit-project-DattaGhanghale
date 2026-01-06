@@ -23,7 +23,7 @@ const ShareButton: React.FC = () => {
     const message =
       "मी डेमो मतदान केले आहे! तुम्ही केले का?\n" +
       "👇 इथे क्लिक करा आणि लगेच डेमो मतदान करा\n" +
-      "https://nmdemoprabhagno-26.flintinfotechlive.site";
+      "https://demoprabhagno-08.flintinfotechlive.site";
     const encodedText = encodeURIComponent(message);
     window.open(`https://wa.me/?text=${encodedText}`, "_blank");
   };

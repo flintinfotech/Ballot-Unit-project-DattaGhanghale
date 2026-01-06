@@ -68,8 +68,8 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-अ</span>
-                  <span>Panel No: 26-A</span>
+                  <span>प्रभाग क्र: ८-अ</span>
+                  <span>Panel No: 8-A</span>
                 </div>
               </td>
             </tr>
