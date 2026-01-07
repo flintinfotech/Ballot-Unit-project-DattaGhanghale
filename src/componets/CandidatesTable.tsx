@@ -68,8 +68,8 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-अ</span>
-                  <span>Panel No: 26-A</span>
+                  <span>प्रभाग क्र: २७-अ</span>
+                  <span>Panel No: 27-A</span>
                 </div>
               </td>
             </tr>
@@ -101,8 +101,8 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6} style={{ background: "pink" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-ब</span>
-                  <span>Panel No: 26-B</span>
+                  <span>प्रभाग क्र: २७-ब</span>
+                  <span>Panel No: 27-B</span>
                 </div>
               </td>
             </tr>
@@ -134,8 +134,8 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6} style={{ background: "lightyellow" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-क</span>
-                  <span>Panel No: 26-C</span>
+                  <span>प्रभाग क्र: २७-क</span>
+                  <span>Panel No: 27-C</span>
                 </div>
               </td>
             </tr>
@@ -167,8 +167,8 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6} style={{ background: "lightskyblue" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-ड</span>
-                  <span>Panel No: 26-D</span>
+                  <span>प्रभाग क्र: २७-ड</span>
+                  <span>Panel No: 27-D</span>
                 </div>
               </td>
             </tr>
