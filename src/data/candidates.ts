@@ -3,9 +3,9 @@ import type { Candidate } from "../types/candidate";
 export const candidates: Candidate[] = [
   {
     id: 1,
-    name: "दत्तात्रय विठ्ठल घंगाळे",
-    photo1: "/PrabhagNo26Images/DattaGh1.jpeg",
-    symbol: "/ShivsenaSVG.png",
+    name: "सौ. करीना राजेश घरत",
+    photo1: "/PrabhagNo16Images/DattaGh1.jpeg",
+    symbol: "/shitti.png",
     votes: 0,
   },
   {
@@ -60,9 +60,9 @@ export const candidates: Candidate[] = [
 
   {
     id: 1,
-    name: "अश्विनी दत्तात्रय घंगाळे",
-    photo1: "/PrabhagNo26Images/AshGh1.jpeg",
-    symbol: "/ShivsenaSVG.png",
+    name: "सौ. शशिकला दशरथ सिंग",
+    photo1: "/PrabhagNo16Images/AshGh1.jpeg",
+    symbol: "/mashal.png",
     votes: 0,
   },
   {
@@ -133,9 +133,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "म्हात्रे सोनम राजेश",
-    photo1: "/PrabhagNo26Images/SonamM1.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "श्री. यतिन विनायक देशमुख",
+    photo1: "/PrabhagNo16Images/SonamM1.jpg",
+    symbol: "/mashal.png",
     votes: 0,
   },
   {
@@ -189,9 +189,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "संदीप नरहरी साळुंके",
-    photo1: "/PrabhagNo26Images/SandipS2.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "श्री. बबन ज. विश्वकर्मा",
+    photo1: "/PrabhagNo16Images/SandipS2.jpg",
+    symbol: "/shitti.png",
     votes: 0,
   },
   {
