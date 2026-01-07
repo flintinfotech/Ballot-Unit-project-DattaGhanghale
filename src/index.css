@@ -159,3 +159,34 @@
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+/*Below All CSS if for Arrow to the left side*/
+/* .evm-arrow-left {
+  display: inline-flex;
+  align-items: center;
+} */
+
+/* Arrow tail (line) */
+/* .arrow-line {
+  width: 22px;
+  height: 10px;
+  background-color: #000000; 
+} */
+
+/* Arrow head (triangle) */
+/* .arrow-head {
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 14px solid #000000; 
+} */
+
+/* Active (RED) */
+/* .evm-arrow-left.active .arrow-line {
+  background-color: #ff0000; 
+} */
+
+/* .evm-arrow-left.active .arrow-head {
+  border-right-color: #ff0000; 
+} */
