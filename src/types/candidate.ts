@@ -1,5 +1,5 @@
 export interface Candidate {
-  id: number;
+  id: number;    // panel serial number
   name: string;
   photo1: string;
   symbol: string;
