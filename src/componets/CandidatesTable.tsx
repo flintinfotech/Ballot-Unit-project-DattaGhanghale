@@ -23,7 +23,7 @@ const CandidatesTable: React.FC = () => {
   };
 
   // ✅ Vote handler (SECTION-SAFE)
-  const handleVote = (candidate: Candidate, uniqueKey: string) => {
+  const handleVote = (candidate: Candidate, uniqueKey: string, disableBeepSound: boolean = false) => {
     if (!isValidImage(candidate.photo1) || !isValidImage(candidate.symbol)) {
       new Audio("/sounds/Error.mp3").play().catch(() => { });
       return;
@@ -37,9 +37,14 @@ const CandidatesTable: React.FC = () => {
 
     setActiveKey(uniqueKey);
 
+    // 🔕 Disable beep sound conditionally
+  if (!disableBeepSound) {
     const sound = new Audio("/sounds/Beep.mp3");
     sound.onended = () => setActiveKey(null);
-    sound.play().catch(() => { });
+    sound.play().catch(() => {});
+  } else {
+    setTimeout(() => setActiveKey(null), 200);
+  }
   };
 
   // ✅ Render image safely
@@ -76,6 +81,7 @@ const CandidatesTable: React.FC = () => {
 
             {data.slice(0, 8).map((c, i) => {
               const key = `sec1-${c.id}`;
+               const disableSound = i === 0; // 👈 1st row
               return (
                 <tr key={key}>
                   <td>{toMarathiNumber(i + 1)}</td>
@@ -89,7 +95,7 @@ const CandidatesTable: React.FC = () => {
                     />
                   </td>
                   <td style={{ backgroundColor: "#e0e0e0" }}>
-                    <button className="vote-btn" onClick={() => handleVote(c, key)}>
+                    <button className="vote-btn" onClick={() => handleVote(c, key, disableSound)}>
                       <b>बटन दाबा 👆🏼</b>
                     </button>
                   </td>
@@ -99,7 +105,7 @@ const CandidatesTable: React.FC = () => {
 
             {/* ================= SECTION 2 ================= */}
             <tr className="group-row">
-              <td colSpan={6} style={{ background: "lightyellow" }}>
+              <td colSpan={6} style={{ background: "pink" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                   <span>प्रभाग क्र: १२-ब</span>
                   <span>Panel No: 12-B</span>
@@ -109,39 +115,7 @@ const CandidatesTable: React.FC = () => {
 
             {data.slice(8, 15).map((c, i) => {
               const key = `sec2-${c.id}`;
-              return (
-                <tr key={key} style={{ background: "lightyellow" }}>
-                  <td>{toMarathiNumber(i + 1)}</td>
-                  <td><b>{c.name}</b></td>
-                  <td>{renderImage(c.photo1, "candidate-photo")}</td>
-                  <td>{renderImage(c.symbol, "candidate-symbol")}</td>
-                  <td>
-                    <span
-                      className="status-dot"
-                      style={{ background: activeKey === key ? "red" : "black" }}
-                    />
-                  </td>
-                  <td style={{ backgroundColor: "#e0e0e0" }}>
-                    <button className="vote-btn" onClick={() => handleVote(c, key)}>
-                      <b>बटन दाबा 👆🏼</b>
-                    </button>
-                  </td>
-                </tr>
-              );
-            })}
-
-            {/* ================= SECTION 3 ================= */}
-            <tr className="group-row">
-              <td colSpan={6} style={{ background: "pink" }}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: १२-क</span>
-                  <span>Panel No: 12-C</span>
-                </div>
-              </td>
-            </tr>
-
-            {data.slice(15, 23).map((c, i) => {
-              const key = `sec3-${c.id}`;
+               const disableSound = i === 0; // 👈 1st row
               return (
                 <tr key={key} style={{ background: "lightpink" }}>
                   <td>{toMarathiNumber(i + 1)}</td>
@@ -155,7 +129,41 @@ const CandidatesTable: React.FC = () => {
                     />
                   </td>
                   <td style={{ backgroundColor: "#e0e0e0" }}>
-                    <button className="vote-btn" onClick={() => handleVote(c, key)}>
+                    <button className="vote-btn" onClick={() => handleVote(c, key, disableSound)}>
+                      <b>बटन दाबा 👆🏼</b>
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+
+            {/* ================= SECTION 3 ================= */}
+            <tr className="group-row">
+              <td colSpan={6} style={{ background: "lightyellow" }}>
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>प्रभाग क्र: १२-क</span>
+                  <span>Panel No: 12-C</span>
+                </div>
+              </td>
+            </tr>
+
+            {data.slice(15, 23).map((c, i) => {
+              const key = `sec3-${c.id}`;
+               const disableSound = i === 3; // 👈 4th row
+              return (
+                <tr key={key} style={{ background: "lightyellow" }}>
+                  <td>{toMarathiNumber(i + 1)}</td>
+                  <td><b>{c.name}</b></td>
+                  <td>{renderImage(c.photo1, "candidate-photo")}</td>
+                  <td>{renderImage(c.symbol, "candidate-symbol")}</td>
+                  <td>
+                    <span
+                      className="status-dot"
+                      style={{ background: activeKey === key ? "red" : "black" }}
+                    />
+                  </td>
+                  <td style={{ backgroundColor: "#e0e0e0" }}>
+                    <button className="vote-btn" onClick={() => handleVote(c, key, disableSound)}>
                       <b>बटन दाबा 👆🏼</b>
                     </button>
                   </td>
