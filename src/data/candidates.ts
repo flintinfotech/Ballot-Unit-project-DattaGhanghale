@@ -3,16 +3,16 @@ import type { Candidate } from "../types/candidate";
 export const candidates: Candidate[] = [
   {
     id: 1,
-    name: "बबन नामदेव मुकादम",
-    photo1: "/PrabhagNo08Images/baban.jpg",
-    symbol: "/bjp1.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
     id: 2,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "बबन नामदेव मुकादम",
+    photo1: "/PrabhagNo08Images/baban.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -60,16 +60,16 @@ export const candidates: Candidate[] = [
 
   {
     id: 1,
-    name: "सायली तुकाराम सरक",
-    photo1: "/PrabhagNo08Images/sayali.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
     id: 2,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "सायली तुकाराम सरक",
+    photo1: "/PrabhagNo08Images/sayali.jpg",
+    symbol: "/ShivsenaSVG.png",
     votes: 0,
   },
   {
@@ -119,9 +119,9 @@ export const candidates: Candidate[] = [
 
   {
     id: 2,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "बायजा बबन बारगजे",
+    photo1: "/PrabhagNo08Images/sayja.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -133,9 +133,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "बायजा बबन बारगजे",
-    photo1: "/PrabhagNo08Images/sayja.jpg",
-    symbol: "/bjp1.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
