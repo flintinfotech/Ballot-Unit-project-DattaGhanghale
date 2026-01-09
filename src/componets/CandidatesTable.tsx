@@ -99,7 +99,7 @@ const CandidatesTable: React.FC = () => {
 
             {/* ================= SECTION 2 ================= */}
             <tr className="group-row">
-              <td colSpan={6} style={{ background: "pink" }}>
+              <td colSpan={6} style={{ background: "lightyellow" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                   <span>प्रभाग क्र: १२-ब</span>
                   <span>Panel No: 12-B</span>
@@ -110,7 +110,7 @@ const CandidatesTable: React.FC = () => {
             {data.slice(8, 15).map((c, i) => {
               const key = `sec2-${c.id}`;
               return (
-                <tr key={key} style={{ background: "lightpink" }}>
+                <tr key={key} style={{ background: "lightyellow" }}>
                   <td>{toMarathiNumber(i + 1)}</td>
                   <td><b>{c.name}</b></td>
                   <td>{renderImage(c.photo1, "candidate-photo")}</td>
@@ -132,7 +132,7 @@ const CandidatesTable: React.FC = () => {
 
             {/* ================= SECTION 3 ================= */}
             <tr className="group-row">
-              <td colSpan={6} style={{ background: "lightyellow" }}>
+              <td colSpan={6} style={{ background: "pink" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                   <span>प्रभाग क्र: १२-क</span>
                   <span>Panel No: 12-C</span>
@@ -143,7 +143,7 @@ const CandidatesTable: React.FC = () => {
             {data.slice(15, 23).map((c, i) => {
               const key = `sec3-${c.id}`;
               return (
-                <tr key={key} style={{ background: "lightyellow" }}>
+                <tr key={key} style={{ background: "lightpink" }}>
                   <td>{toMarathiNumber(i + 1)}</td>
                   <td><b>{c.name}</b></td>
                   <td>{renderImage(c.photo1, "candidate-photo")}</td>
