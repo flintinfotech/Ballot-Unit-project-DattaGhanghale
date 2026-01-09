@@ -13,7 +13,7 @@ const NoticeBanner: React.FC = () => {
         flex: 1,
       }}
     >
-      मतदानाच्या दिवशी सुद्धा "धनुष्यबाण" चिन्हा समोरील निळे बटन दाबावे.
+      मतदानाच्या दिवशी सुद्धा "कमळ" चिन्हा समोरील निळे बटन दाबावे.
     </div>
   );
 };
@@ -25,7 +25,7 @@ const ShareButton: React.FC = () => {
       "👇 इथे क्लिक करा आणि लगेच डेमो मतदान करा\n" +
       "I have done the demo voting! Have you?\n" +
       "👇 Click here and do demo voting now\n" +
-      "https://nmdemoprabhagno-26.flintinfotechlive.site";
+      "nmnerulbjpprabhagno-26.flintinfotechlive.site";
     const encodedText = encodeURIComponent(message);
     window.open(`https://wa.me/?text=${encodedText}`, "_blank");
   };

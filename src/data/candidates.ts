@@ -3,9 +3,9 @@ import type { Candidate } from "../types/candidate";
 export const candidates: Candidate[] = [
   {
     id: 1,
-    name: "दत्तात्रय विठ्ठल घंगाळे",
-    photo1: "/PrabhagNo26Images/DattaGh1.jpeg",
-    symbol: "/ShivsenaSVG.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
@@ -17,9 +17,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 3,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "दिपक रघुनाथ पवार",
+    photo1: "/PrabhagNo26Images/Dipak.jpeg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -60,9 +60,9 @@ export const candidates: Candidate[] = [
 
   {
     id: 1,
-    name: "अश्विनी दत्तात्रय घंगाळे",
-    photo1: "/PrabhagNo26Images/AshGh1.jpeg",
-    symbol: "/ShivsenaSVG.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
@@ -74,9 +74,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 3,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "संतोषी गणेश म्हात्रे",
+    photo1: "/PrabhagNo26Images/Santoshi.jpeg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -126,16 +126,16 @@ export const candidates: Candidate[] = [
   },
   {
     id: 3,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "रेखा विनोद म्हात्रे",
+    photo1: "/PrabhagNo26Images/Rekha.jpeg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
     id: 4,
-    name: "म्हात्रे सोनम राजेश",
-    photo1: "/PrabhagNo26Images/SonamM1.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
@@ -168,9 +168,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 1,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "विशाल राजन डोळस",
+    photo1: "/PrabhagNo26Images/Vishaal.png",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -189,9 +189,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "संदीप नरहरी साळुंके",
-    photo1: "/PrabhagNo26Images/SandipS2.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
