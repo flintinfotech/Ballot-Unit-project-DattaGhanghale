@@ -82,10 +82,17 @@ const CandidatesTable: React.FC = () => {
                   <td>{renderImage(c.photo1, "candidate-photo")}</td>
                   <td>{renderImage(c.symbol, "candidate-symbol")}</td>
                   <td>
-                    <span
+                    {/* <span
                       className="status-dot"
                       style={{ background: activeKey === key ? "red" : "black" }}
-                    />
+                    /> */}
+                    {/* This below span is is for the Arrow Left Side instead black dot. */}
+                    <span
+                      className={`evm-arrow-left ${activeKey === key ? "active" : ""}`}
+                    >
+                      <span className="arrow-head"></span>
+                      <span className="arrow-line"></span>
+                    </span>
                   </td>
                   <td style={{ backgroundColor: "#e0e0e0" }}>
                     <button className="vote-btn" onClick={() => handleVote(c, key)}>
@@ -115,9 +122,15 @@ const CandidatesTable: React.FC = () => {
                   <td>{renderImage(c.symbol, "candidate-symbol")}</td>
                   <td>
                     <span
+                      className={`evm-arrow-left ${activeKey === key ? "active" : ""}`}
+                    >
+                      <span className="arrow-head"></span>
+                      <span className="arrow-line"></span>
+                    </span>
+                    {/* <span
                       className="status-dot"
                       style={{ background: activeKey === key ? "red" : "black" }}
-                    />
+                    /> */}
                   </td>
                   <td style={{ backgroundColor: "#e0e0e0" }}>
                     <button className="vote-btn" onClick={() => handleVote(c, key)}>
@@ -147,9 +160,15 @@ const CandidatesTable: React.FC = () => {
                   <td>{renderImage(c.symbol, "candidate-symbol")}</td>
                   <td>
                     <span
+                      className={`evm-arrow-left ${activeKey === key ? "active" : ""}`}
+                    >
+                      <span className="arrow-head"></span>
+                      <span className="arrow-line"></span>
+                    </span>
+                    {/* <span
                       className="status-dot"
                       style={{ background: activeKey === key ? "red" : "black" }}
-                    />
+                    /> */}
                   </td>
                   <td style={{ backgroundColor: "#e0e0e0" }}>
                     <button className="vote-btn" onClick={() => handleVote(c, key)}>
