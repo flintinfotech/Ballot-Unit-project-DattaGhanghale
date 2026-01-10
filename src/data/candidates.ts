@@ -3,9 +3,9 @@ import type { Candidate } from "../types/candidate";
 export const candidates: Candidate[] = [
   {
     id: 1,
-    name: "दत्तात्रय विठ्ठल घंगाळे",
-    photo1: "/PrabhagNo26Images/DattaGh1.jpeg",
-    symbol: "/ShivsenaSVG.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
@@ -24,34 +24,13 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "श्री. विजय बाबासाहेब साळे",
+    photo1: "/PrabhagNo22Images/vijay.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
     id: 5,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 6,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 7,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 8,
     name: "",
     photo1: "",
     symbol: "",
@@ -60,9 +39,9 @@ export const candidates: Candidate[] = [
 
   {
     id: 1,
-    name: "अश्विनी दत्तात्रय घंगाळे",
-    photo1: "/PrabhagNo26Images/AshGh1.jpeg",
-    symbol: "/ShivsenaSVG.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
@@ -74,9 +53,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 3,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "डॉ. प्रणाली काशिनाथ पाटील",
+    photo1: "/PrabhagNo22Images/pranali.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -94,21 +73,7 @@ export const candidates: Candidate[] = [
     symbol: "",
     votes: 0,
   },
-  {
-    id: 6,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
 
-  {
-    id: 7,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
   {
     id: 1,
     name: "",
@@ -133,9 +98,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "म्हात्रे सोनम राजेश",
-    photo1: "/PrabhagNo26Images/SonamM1.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "सौ. उषा तानाजी यमगर",
+    photo1: "/PrabhagNo22Images/usha.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -145,27 +110,7 @@ export const candidates: Candidate[] = [
     symbol: "",
     votes: 0,
   },
-  {
-    id: 6,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 7,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 8,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
+
   {
     id: 1,
     name: "",
@@ -189,9 +134,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 4,
-    name: "संदीप नरहरी साळुंके",
-    photo1: "/PrabhagNo26Images/SandipS2.jpg",
-    symbol: "/ShivsenaSVG.png",
+    name: "श्री. काशिनाथ ज. पाटील",
+    photo1: "/PrabhagNo22Images/kashinath.jpg",
+    symbol: "/bjp1.png",
     votes: 0,
   },
   {
@@ -201,18 +146,5 @@ export const candidates: Candidate[] = [
     symbol: "",
     votes: 0,
   },
-  {
-    id: 6,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 7,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
+
 ];

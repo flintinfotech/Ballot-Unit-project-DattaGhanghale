@@ -68,13 +68,13 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-अ</span>
-                  <span>Panel No: 26-A</span>
+                  <span>प्रभाग क्र: २२-अ</span>
+                  <span>Panel No: 22-A</span>
                 </div>
               </td>
             </tr>
 
-            {data.slice(0, 8).map((c, i) => {
+            {data.slice(0, 5).map((c, i) => {
               const key = `sec1-${c.id}`;
               return (
                 <tr key={key}>
@@ -101,13 +101,13 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6} style={{ background: "pink" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-ब</span>
-                  <span>Panel No: 26-B</span>
+                  <span>प्रभाग क्र: २२-ब</span>
+                  <span>Panel No: 22-B</span>
                 </div>
               </td>
             </tr>
 
-            {data.slice(8, 15).map((c, i) => {
+            {data.slice(5, 10).map((c, i) => {
               const key = `sec2-${c.id}`;
               return (
                 <tr key={key} style={{ background: "lightpink" }}>
@@ -134,13 +134,13 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6} style={{ background: "lightyellow" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-क</span>
-                  <span>Panel No: 26-C</span>
+                  <span>प्रभाग क्र: २२-क</span>
+                  <span>Panel No: 22-C</span>
                 </div>
               </td>
             </tr>
 
-            {data.slice(15, 23).map((c, i) => {
+            {data.slice(10, 15).map((c, i) => {
               const key = `sec3-${c.id}`;
               return (
                 <tr key={key} style={{ background: "lightyellow" }}>
@@ -167,13 +167,13 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6} style={{ background: "lightskyblue" }}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-ड</span>
-                  <span>Panel No: 26-D</span>
+                  <span>प्रभाग क्र: २२-ड</span>
+                  <span>Panel No: 22-D</span>
                 </div>
               </td>
             </tr>
 
-            {data.slice(23, 31).map((c, i) => {
+            {data.slice(15, 20).map((c, i) => {
               const key = `sec4-${c.id}`;
               return (
                 <tr key={key} style={{ background: "lightskyblue" }}>
