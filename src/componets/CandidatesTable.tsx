@@ -67,14 +67,13 @@ const CandidatesTable: React.FC = () => {
             {/* ================= SECTION 1 ================= */}
             <tr className="group-row">
               <td colSpan={6}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-अ</span>
-                  <span>Panel No: 26-A</span>
+                <div style={{ justifyContent: "center" }}>
+                  <span>अ-अनुसूचित जमाती प्रवर्ग</span>
                 </div>
               </td>
             </tr>
 
-            {data.slice(0, 8).map((c, i) => {
+            {data.slice(0, 4).map((c, i) => {
               const key = `sec1-${c.id}`;
               return (
                 <tr key={key}>
@@ -100,14 +99,13 @@ const CandidatesTable: React.FC = () => {
             {/* ================= SECTION 2 ================= */}
             <tr className="group-row">
               <td colSpan={6} style={{ background: "pink" }}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-ब</span>
-                  <span>Panel No: 26-B</span>
+                <div style={{ justifyContent: "center" }}>
+                  <span>ब-नागरिकांचा मागास प्रवर्ग महिला</span>
                 </div>
               </td>
             </tr>
 
-            {data.slice(8, 15).map((c, i) => {
+            {data.slice(4, 9).map((c, i) => {
               const key = `sec2-${c.id}`;
               return (
                 <tr key={key} style={{ background: "lightpink" }}>
@@ -133,50 +131,16 @@ const CandidatesTable: React.FC = () => {
             {/* ================= SECTION 3 ================= */}
             <tr className="group-row">
               <td colSpan={6} style={{ background: "lightyellow" }}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-क</span>
-                  <span>Panel No: 26-C</span>
+                <div style={{ justifyContent: "center" }}>
+                  <span>क-सर्वसाधारण प्रवर्ग</span>
                 </div>
               </td>
             </tr>
 
-            {data.slice(15, 23).map((c, i) => {
+            {data.slice(9, 27).map((c, i) => {
               const key = `sec3-${c.id}`;
               return (
                 <tr key={key} style={{ background: "lightyellow" }}>
-                  <td>{toMarathiNumber(i + 1)}</td>
-                  <td><b>{c.name}</b></td>
-                  <td>{renderImage(c.photo1, "candidate-photo")}</td>
-                  <td>{renderImage(c.symbol, "candidate-symbol")}</td>
-                  <td>
-                    <span
-                      className="status-dot"
-                      style={{ background: activeKey === key ? "red" : "black" }}
-                    />
-                  </td>
-                  <td style={{ backgroundColor: "#e0e0e0" }}>
-                    <button className="vote-btn" onClick={() => handleVote(c, key)}>
-                      <b>बटन दाबा 👆🏼</b>
-                    </button>
-                  </td>
-                </tr>
-              );
-            })}
-
-            {/* ================= SECTION 4 ================= */}
-            <tr className="group-row">
-              <td colSpan={6} style={{ background: "lightskyblue" }}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: २६-ड</span>
-                  <span>Panel No: 26-D</span>
-                </div>
-              </td>
-            </tr>
-
-            {data.slice(23, 31).map((c, i) => {
-              const key = `sec4-${c.id}`;
-              return (
-                <tr key={key} style={{ background: "lightskyblue" }}>
                   <td>{toMarathiNumber(i + 1)}</td>
                   <td><b>{c.name}</b></td>
                   <td>{renderImage(c.photo1, "candidate-photo")}</td>
