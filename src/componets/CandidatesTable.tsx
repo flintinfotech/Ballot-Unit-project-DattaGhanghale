@@ -14,7 +14,7 @@ const CandidatesTable: React.FC = () => {
 
   // Convert number to Marathi digits
   const toMarathiNumber = (num: number) => {
-    const marathiDigits = ["०", "१", "२", "३", "४", "५", "६", "७", "८", "९"];
+    const marathiDigits = ["०", "१", "२", "३", "४", "५", "६"];
     return num
       .toString()
       .split("")
@@ -68,8 +68,8 @@ const CandidatesTable: React.FC = () => {
             <tr className="group-row">
               <td colSpan={6}>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>प्रभाग क्र: ८९-अ</span>
-                  <span>Panel No: 89-A</span>
+                  <span>जि. प. निवडणूक विभाग-२८ खरोळा</span>
+                  <span>आरक्षण- सर्वसाधारण महिला</span>
                 </div>
               </td>
             </tr>

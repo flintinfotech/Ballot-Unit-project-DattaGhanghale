@@ -17,9 +17,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 3,
-    name: "गितेश विनायक राऊत",
-    photo1: "/PrabhagNo89Images/gitesh2.png",
-    symbol: "/mashal.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
   {
@@ -38,52 +38,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 6,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 7,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 8,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-
-  {
-    id: 9,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 10,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 11,
-    name: "",
-    photo1: "",
-    symbol: "",
-    votes: 0,
-  },
-  {
-    id: 12,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "राधा गजानन बोळंगे",
+    photo1: "/laturkharolag-28/Radha.jpeg",
+    symbol: "/Whistle.png",
     votes: 0,
   },
 ];
