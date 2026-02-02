@@ -90,7 +90,7 @@ const BannerWithButton: React.FC = () => {
         </p>
         <hr />
         <p>
-          <strong>मतदान:</strong> शुक्रवार दि. ०७.०२.२०२६ रोजी
+          <strong>मतदान:</strong> शनिवार दि. ०७.०२.२०२६ रोजी
           वेळ: स. ०७:३० ते सायं. ०५:३० पर्यंत.
         </p>
       </div>
