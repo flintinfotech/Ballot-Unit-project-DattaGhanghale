@@ -10,9 +10,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 2,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "रूपाली सुधीर साळुंखे",
+    photo1: "/laturkharolag-28/Rupaali.png",
+    symbol: "/ShivsenaSVG.png",
     votes: 0,
   },
   {
@@ -38,9 +38,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 6,
-    name: "राधा गजानन बोळंगे",
-    photo1: "/laturkharolag-28/Radha.jpeg",
-    symbol: "/Whistle.png",
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
 ];

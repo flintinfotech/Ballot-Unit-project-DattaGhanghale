@@ -67,9 +67,10 @@ const CandidatesTable: React.FC = () => {
             {/* ================= SECTION 1 ================= */}
             <tr className="group-row">
               <td colSpan={6}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>जि. प. निवडणूक विभाग-२८ खरोळा</span>
-                  <span>आरक्षण- सर्वसाधारण महिला</span>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  {/* <span>जि. प. निवडणूक विभाग-२८ खरोळा</span>
+                  <span>आरक्षण- सर्वसाधारण महिला</span> */}
+                  <span>पिंपोडे बु. पंचायत समिती</span>
                 </div>
               </td>
             </tr>
