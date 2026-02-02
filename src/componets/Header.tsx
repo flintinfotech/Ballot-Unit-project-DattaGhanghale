@@ -5,11 +5,11 @@ const Header: React.FC = () => {
       <h1
         style={{
           textAlign: "center",
-          fontSize: "clamp(20px, 4vw, 32px)",
-          margin: "20px 10px",
+          fontSize: "clamp(10px, 4vw, 22px)",
+          margin: "10px 5px",
         }}
       >
-        लातूर जिल्हापरिषदेच्या/रेणापूर पंचायत समितीच्या
+        लातूर जिल्हापरिषद/रेणापूर पंचायत समिती
       </h1>
 
       {/* Sub banner */}
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           margin: "0 auto 20px",
           maxWidth: "900px",      // ✅ Desktop max
           width: "90%",           // ✅ Mobile fit
-          fontSize: "clamp(14px, 3vw, 18px)",
+          fontSize: "clamp(13px, 3vw, 18px)",
         }}
       >
         २८- खरोळा निवडणूक विभागातील सार्वत्रिक निवडणूक, २०२६

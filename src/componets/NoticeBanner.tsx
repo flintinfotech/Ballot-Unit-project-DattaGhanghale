@@ -6,7 +6,7 @@ const NoticeBanner: React.FC = () => {
       style={{
         backgroundColor: "#ff6a33",
         color: "white",
-        padding: "18px 16px",
+        padding: "18px 14px",
         fontSize: "clamp(14px, 3vw, 20px)",
         borderRadius: "10px",
         textAlign: "center",

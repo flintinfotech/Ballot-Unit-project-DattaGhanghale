@@ -212,4 +212,14 @@
   border-right-color: #ff0000; 
 
 }
+
+/* REMOVE GAP BETWEEN NOTICE AND TABLE */
+.notice-info {
+  margin-bottom: 0 !important;
+}
+
+.table-wrapper {
+  margin-top: -20px !important; /* 🔥 KEY FIX */
+}
+
  

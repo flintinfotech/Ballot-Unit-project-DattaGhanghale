@@ -50,7 +50,7 @@ const CandidatesTable: React.FC = () => {
 
   return (
     <>
-      <div className="table-wrapper">
+      <div className="table-wrapper" style={{ marginBottom: "2px" }}>
         <table className="table responsive-table">
           <thead style={{ backgroundColor: "#e0e0e0" }}>
             <tr>
