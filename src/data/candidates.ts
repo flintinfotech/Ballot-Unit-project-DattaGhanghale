@@ -10,9 +10,9 @@ export const candidates: Candidate[] = [
   },
   {
     id: 2,
-    name: "",
-    photo1: "",
-    symbol: "",
+    name: "श्री. आनंदराव जयसिंगराव पाटील (राजाभाऊ)",
+    photo1: "/KaradYelgaon/Anand.png",
+    symbol: "/Coconut.svg",
     votes: 0,
   },
   {
@@ -22,25 +22,26 @@ export const candidates: Candidate[] = [
     symbol: "",
     votes: 0,
   },
+
   {
-    id: 4,
+    id: 1,
     name: "",
     photo1: "",
     symbol: "",
     votes: 0,
   },
   {
-    id: 5,
-    name: "",
-    photo1: "",
-    symbol: "",
+    id: 2,
+    name: "संगीता संजय शेटे",
+    photo1: "/KaradYelgaon/Sangita.png",
+    symbol: "/BJP_Logo.png",
     votes: 0,
   },
   {
-    id: 6,
-    name: "राधा गजानन बोळंगे",
-    photo1: "/laturkharolag-28/Radha.jpeg",
-    symbol: "/Whistle.png",
+    id: 3,
+    name: "",
+    photo1: "",
+    symbol: "",
     votes: 0,
   },
 ];

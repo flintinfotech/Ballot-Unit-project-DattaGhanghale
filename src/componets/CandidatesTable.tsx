@@ -7,14 +7,11 @@ const CandidatesTable: React.FC = () => {
   const [data, setData] = useState<Candidate[]>(initialCandidates);
   const [activeKey, setActiveKey] = useState<string | null>(null);
 
-  // ✅ Image validation helper
-  const isValidImage = (src?: string) => {
-    return !!src && (src.startsWith("/") || src.startsWith("http"));
-  };
+  const isValidImage = (src?: string) =>
+    !!src && (src.startsWith("/") || src.startsWith("http"));
 
-  // Convert number to Marathi digits
   const toMarathiNumber = (num: number) => {
-    const marathiDigits = ["०", "१", "२", "३", "४", "५", "६"];
+    const marathiDigits = ["०", "१", "२", "३"];
     return num
       .toString()
       .split("")
@@ -22,8 +19,7 @@ const CandidatesTable: React.FC = () => {
       .join("");
   };
 
-  // ✅ Vote handler (SECTION-SAFE)
-  const handleVote = (candidate: Candidate, uniqueKey: string) => {
+  const handleVote = (candidate: Candidate, uniqueKey: string, playSound: boolean) => {
     if (!isValidImage(candidate.photo1) || !isValidImage(candidate.symbol)) {
       new Audio("/sounds/Error.mp3").play().catch(() => { });
       return;
@@ -37,16 +33,17 @@ const CandidatesTable: React.FC = () => {
 
     setActiveKey(uniqueKey);
 
-    const sound = new Audio("/sounds/Beep.mp3");
-    sound.onended = () => setActiveKey(null);
-    sound.play().catch(() => { });
+    if (playSound) {
+      const sound = new Audio("/sounds/Beep.mp3");
+      sound.onended = () => setActiveKey(null);
+      sound.play().catch(() => { });
+    } else {
+      setTimeout(() => setActiveKey(null), 300);
+    }
   };
 
-  // ✅ Render image safely
-  const renderImage = (src?: string, className?: string) => {
-    if (!isValidImage(src)) return null;
-    return <img src={src} className={className} alt="" />;
-  };
+  const renderImage = (src?: string, className?: string) =>
+    isValidImage(src) ? <img src={src} className={className} alt="" /> : null;
 
   return (
     <>
@@ -64,18 +61,17 @@ const CandidatesTable: React.FC = () => {
           </thead>
 
           <tbody>
-            {/* ================= SECTION 1 ================= */}
+            {/* ===== SECTION 1 ===== */}
             <tr className="group-row">
               <td colSpan={6}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span>जि. प. निवडणूक विभाग-२८ खरोळा</span>
-                  <span>आरक्षण- सर्वसाधारण महिला</span>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <span>६५ येळगाव जिल्हा परिषद गटाचे भाजपा पुरस्कृत उमेदवार</span>
                 </div>
               </td>
             </tr>
 
-            {data.map((c, i) => {
-              const key = `sec1-${c.id}`;
+            {data.slice(0, 3).map((c, i) => {
+              const key = `sec1-${i}`;
               return (
                 <tr key={key}>
                   <td>{toMarathiNumber(i + 1)}</td>
@@ -83,19 +79,13 @@ const CandidatesTable: React.FC = () => {
                   <td>{renderImage(c.photo1, "candidate-photo")}</td>
                   <td>{renderImage(c.symbol, "candidate-symbol")}</td>
                   <td>
-                    {/* <span
-                      className="status-dot"
-                      style={{ background: activeKey === key ? "red" : "black" }}
-                    /> */}
-                    <span
-                      className={`evm-arrow-left ${activeKey === key ? "active" : ""}`}
-                    >
+                    <span className={`evm-arrow-left ${activeKey === key ? "active" : ""}`}>
                       <span className="arrow-head"></span>
                       <span className="arrow-line"></span>
                     </span>
                   </td>
                   <td style={{ backgroundColor: "#e0e0e0" }}>
-                    <button className="vote-btn" onClick={() => handleVote(c, key)}>
+                    <button className="vote-btn" onClick={() => handleVote(c, key, false)}>
                       <b>बटन दाबा 👆🏼</b>
                     </button>
                   </td>
@@ -103,6 +93,37 @@ const CandidatesTable: React.FC = () => {
               );
             })}
 
+            {/* ===== SECTION 2 ===== */}
+            <tr className="group-row">
+              <td colSpan={6} style={{ background: "pink" }}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <span>१३० येळगाव पंचायत समिती गणाच्या अधिकृत उमेदवार</span>
+                </div>
+              </td>
+            </tr>
+
+            {data.slice(3, 6).map((c, i) => {
+              const key = `sec2-${i}`;
+              return (
+                <tr key={key} style={{ background: "lightpink" }}>
+                  <td>{toMarathiNumber(i + 1)}</td>
+                  <td><b>{c.name}</b></td>
+                  <td>{renderImage(c.photo1, "candidate-photo")}</td>
+                  <td>{renderImage(c.symbol, "candidate-symbol")}</td>
+                  <td>
+                    <span className={`evm-arrow-left ${activeKey === key ? "active" : ""}`}>
+                      <span className="arrow-head"></span>
+                      <span className="arrow-line"></span>
+                    </span>
+                  </td>
+                  <td style={{ backgroundColor: "#e0e0e0" }}>
+                    <button className="vote-btn" onClick={() => handleVote(c, key, true)}>
+                      <b>बटन दाबा 👆🏼</b>
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
